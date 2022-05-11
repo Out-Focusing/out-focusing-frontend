@@ -10,10 +10,11 @@ import {
 } from "./Login.style";
 import AuthForm from "../common/AuthForm";
 import AuthTitle from "../common/AuthTitle";
+import DefaultTamplate from "../common/DefaultTamplate";
 
 const Login = () => {
   return (
-    <>
+    <DefaultTamplate>
       <StyledLoginContainer>
         <AuthForm height={580}>
           <AuthTitle text="아웃포커싱에 로그인" />
@@ -28,7 +29,7 @@ const Login = () => {
           <StyledRegisterBtn>계정 만들기</StyledRegisterBtn>
         </StyledLoginSubContainer>
       </StyledLoginContainer>
-    </>
+    </DefaultTamplate>
   );
 };
 

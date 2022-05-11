@@ -2,12 +2,13 @@ import React from "react";
 import AuthForm from "../common/AuthForm";
 import AuthTitle from "../common/AuthTitle";
 import Button from "../common/Button";
+import DefaultTamplate from "../common/DefaultTamplate";
 import AuthInput from "../common/Input/AuthInput";
 import { StyledBtnContainer } from "./RegisterSubmit.style";
 
 const RegisterSubmit = () => {
   return (
-    <>
+    <DefaultTamplate>
       <AuthForm height={787}>
         <AuthTitle text="회원가입" />
         <AuthInput text="이메일" type="text" />
@@ -23,7 +24,7 @@ const RegisterSubmit = () => {
           <Button width={150} text="가입하기" margin={0} background="#887BEC" />
         </StyledBtnContainer>
       </AuthForm>
-    </>
+    </DefaultTamplate>
   );
 };
 
